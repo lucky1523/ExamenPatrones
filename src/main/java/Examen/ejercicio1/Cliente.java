@@ -12,5 +12,14 @@ public class Cliente {
         Administrador admi= new Administrador();
         admi.consultarSaldoCaseta();
         admi.consultarVehiculos();
+
+        Conductor conductor2= new Conductor();
+        conductor1.pagarPeaje(50,new Vehiculo("2315-UHB","Toyota","10.000 km"));
+        conductor1.pagarPeaje(50,new Vehiculo("4587-IYB","Nissan","200.000 km"));
+
+
+        Administrador admi2= new Administrador();
+        admi.consultarSaldoCaseta();
+        admi.consultarVehiculos();
     }
 }
